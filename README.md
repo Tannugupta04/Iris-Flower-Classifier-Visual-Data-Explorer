@@ -115,3 +115,60 @@ Each chart includes a short description to help interpret the data.
 Tip: Try adjusting input values and observe how predictions and visualizations change, especially for petal length and width — they strongly influence the model.
 
 
+## How the Visualizations Work
+
+The app includes several interactive charts and plots that help users understand the Iris dataset and the behavior of the classification model. These visualizations are organized into three tabs.
+
+---
+
+### Tab 1: Basic Stats
+
+#### Dataset Preview  
+Displays the first 10 rows of the dataset to give users an idea of the structure, feature names, and values.
+
+#### Species Count  
+A bar chart showing the number of samples for each Iris species.  
+**Purpose**: To check if the dataset is balanced or skewed toward a specific class.
+
+---
+
+### Tab 2: Feature Analysis
+
+This tab allows users to explore how a selected feature (e.g., *Petal Length*) varies across different species using three different plot types:
+
+#### Histogram  
+Displays the distribution of a selected feature for all samples.  
+**Purpose**: To identify common values and understand the spread of the feature.
+
+#### Violin Plot by Species  
+Shows the distribution and density of the selected feature for each species.  
+**Purpose**: Helps compare how each species differs in the selected feature.
+
+#### Box Plot  
+Displays the median, quartiles, and outliers for the selected feature across species.  
+**Purpose**: Quickly assess central tendency and variation per species.
+
+---
+
+### Tab 3: Advanced Plots
+
+#### Correlation Heatmap  
+Displays the correlation coefficients between features (e.g., Sepal Width vs Petal Width).  
+**Purpose**: To identify which features are strongly related and potentially redundant.
+
+#### Pair Plot  
+Creates a grid of scatter plots for every pair of features, color-coded by species.  
+**Purpose**: Helps visualize relationships and separability between features across species.
+
+#### Feature Means by Species  
+Bar chart showing the average value of each feature grouped by species.  
+**Purpose**: Highlights how feature values differ across species, useful for classification.
+
+#### Feature Importance (from Model)  
+Bar plot displaying how important each feature is according to the trained Random Forest model.  
+**Purpose**: Helps users understand which features have the most influence on the prediction.
+
+---
+
+These visualizations make it easy to not only predict a species but also build intuition about the data, model behavior, and underlying patterns within the Iris dataset.
+
