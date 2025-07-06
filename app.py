@@ -46,9 +46,8 @@ st.header("📊 Visual Explorations of the Iris Dataset")
 
 tab1, tab2, tab3 = st.tabs(["🔢 Basic Stats", "🧪 Feature Analysis", "📌 Advanced Plots"])
 
-# -------------------------------
 # TAB 1: Basic Stats
-# -------------------------------
+
 with tab1:
     st.subheader("Dataset Overview")
     st.dataframe(iris_df.head(10))
@@ -60,9 +59,9 @@ with tab1:
     st.pyplot(fig)
     st.caption("🔹 Shows how balanced the dataset is across species.")
 
-# -------------------------------
+
 # TAB 2: Feature Analysis
-# -------------------------------
+
 with tab2:
     selected_feature = st.selectbox("Select a feature to analyze:", features)
 
@@ -88,9 +87,9 @@ with tab2:
     st.pyplot(fig)
     st.caption(f"🔹 Box shows median and spread of **{selected_feature}** values per species.")
 
-# -------------------------------
+
 # TAB 3: Advanced Plots
-# -------------------------------
+
 with tab3:
     st.subheader("🔗 Correlation Heatmap")
     fig, ax = plt.subplots()
