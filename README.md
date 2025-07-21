@@ -1,3 +1,7 @@
+Developed a web application using Streamlit to deploy a trained machine learning model. The app should allow users to input data, receive predictions, and understand model outputs through visualizations. This helped me to learn how to make your models accessible and interactive.
+
+
+
 # 🌼 Iris Flower Classifier & Visual Data Explorer
 
 This Streamlit web app allows users to **classify iris flower species** based on input features and provides a rich set of **interactive visualizations** to explore the famous [Iris dataset](https://archive.ics.uci.edu/ml/datasets/iris).
